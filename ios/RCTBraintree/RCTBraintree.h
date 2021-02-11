@@ -15,7 +15,6 @@
 #import "BraintreeApplePay.h"
 #import "BraintreeCard.h"
 #import "BraintreeUI.h"
-#import "Braintree3DSecure.h"
 #import "BTDataCollector.h"
 #import "PPDataCollector.h"
 
@@ -24,7 +23,6 @@
 @interface RCTBraintree : UIViewController <RCTBridgeModule, BTDropInViewControllerDelegate, BTViewControllerPresentingDelegate, PKPaymentAuthorizationViewControllerDelegate>
 
 @property (nonatomic, strong) BTAPIClient *braintreeClient;
-@property (nonatomic, strong, readwrite) BTThreeDSecureDriver *threeDSecure;
 @property (nonatomic, strong) UIViewController *reactRoot;
 @property (nonatomic, strong) BTDataCollector *dataCollector;
 
